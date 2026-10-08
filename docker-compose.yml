@@ -1,0 +1,7 @@
+services:
+  api:
+    build: .
+    image: demo-api:1.0.0
+    container_name: demo-api
+    ports:
+      - "3000:3000"
