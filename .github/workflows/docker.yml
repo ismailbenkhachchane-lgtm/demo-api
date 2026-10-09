@@ -1,1 +1,8 @@
-
+name: Docker GHCR
+on:
+  push:
+    branches: [main]
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    permissions: { contents: read, packages: write }
